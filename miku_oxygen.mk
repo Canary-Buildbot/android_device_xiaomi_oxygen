@@ -11,14 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oxygen device.
 $(call inherit-product, device/xiaomi/oxygen/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common Miku-UI stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oxygen
-PRODUCT_NAME := aosp_oxygen
+PRODUCT_NAME := miku_oxygen
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Max 2
 PRODUCT_MANUFACTURER := Xiaomi
