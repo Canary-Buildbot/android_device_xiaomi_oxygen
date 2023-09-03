@@ -36,3 +36,6 @@ BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V11.0.2.0.NDDMIXM:user/r
 
 # Build MIKU_GAPPS
 MIKU_GAPPS := true
+
+# Maintainer
+MIKU_MASTER := Canary233
